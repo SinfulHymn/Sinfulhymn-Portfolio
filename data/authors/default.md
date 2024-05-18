@@ -1,21 +1,33 @@
 ---
 name: Alejandro Rojas
-avatar: /static/images/avatar2.png
-occupation: Full Stack Developer, Automotive Electrician
-company: Freelancer, Big Guy Auto Body
-email: rojas.ale@pm.me
-twitter: https://twitter.com/Kmachappy
-linkedin: https://www.linkedin.com/in/Kmachappy/
-github: https://github.com/Kmachappy
+avatar: /static/images/IMG_8128.JPG
+occupation:  Black hat and Middle School Cyber Coach.
+company: Freelancer
+email: contact@sinfulhymn.me
+twitter: https://twitter.com/Sinfulhymn
+linkedin: https://www.linkedin.com/in/Sinfulhymn/
+github: https://github.com/Sinfulhymn
 ---
 
-### [Hello, I am Kmachappy](http://www.kmachappy.me/) 
+#[Hello, I am Sinfulhymn](http://www.Sinfulhymn.me/)
 
-[Kmachappy](http://kbdmodadmin.cafe24.com/product/detail.html?product_no=15&cate_no=1&display_group=11) (kay-mak-hap-ee): HHKB layout Korean Keyboard
+I am, who I am.
+Black hat and Middle School Coach.
 
-Full Stack Developer, automotive electrician, runner, hiker, and cat parent.
+Cyber security expert, Software engineer, Social engineer, Automotive Electrian. Amateur Glass blower.
 
-My many interests include running, hiking, backpacking, hydropnics, Keyboards, cybersecurity, and social engineering.
+Stoner and psychonaut.
+
+Traveler, I Love to get lost in different countries.
+
+Athlete. Marathon runner, hiker and climber
+
+There’s a lot to me, get to know me.
+I’ve lived a very crazy life for such a young age.
+
+I hate superficial people and people so consumed by mainstream media. If you’re a Disney child or anything of that nature please ignore me
+
+I live a different reality to most people. I don’t live the norm
 
 ---
 
