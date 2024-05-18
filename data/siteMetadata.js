@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Alejandro Rojas',
   firstName: 'Alejandro',
   lastName: 'Rojas',
-  headerTitle: 'SinfulHymn',
+  headerTitle: '',
   description: 'Exploring Depths: A Journey of Self-Discovery, Coding, and Cybersecurity',
   language: 'en-us',
   theme: 'system', // system, dark or light
