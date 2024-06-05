@@ -1,8 +1,8 @@
 ---
 name: Alejandro Rojas
 avatar: /static/images/main_photo.jpg
-occupation:  Black hat and Middle School Cyber Coach.
-company: Enrichment coach & Black Hat Freelancer
+occupation:  Grey hat and Middle School STEM Enrichment Coach.
+company: Enrichment coach & Grey Hat Freelancer
 email: contact@sinfulhymn.me
 twitter: https://twitter.com/Sinfulhymn
 linkedin: https://www.linkedin.com/in/kmachappy/
@@ -12,7 +12,7 @@ github: https://github.com/Sinfulhymn
 # Hello, I am SinfulHymn
 
 I am, who I am.
-Grey hat and Middle School Coach.
+Grey hat and Middle School STEM Enrichment Coach.
 
 Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cultivator, Hydroponics grow, Amateur Glass blower.
 
