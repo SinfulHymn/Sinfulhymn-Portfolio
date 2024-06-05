@@ -1,6 +1,6 @@
 ---
 name: Alejandro Rojas
-avatar: /static/images/IMG_8128.JPG
+avatar: /static/images/main_photo.JPG
 occupation:  Black hat and Middle School Cyber Coach.
 company: Enrichment coach & Black Hat Freelancer
 email: contact@sinfulhymn.me
