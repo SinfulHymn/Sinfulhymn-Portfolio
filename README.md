@@ -96,11 +96,13 @@ images (optional, if none provided defaults to socialBanner in siteMetadata conf
 authors (optional list which should correspond to the file names in `data/authors`. Uses `default` if none is specified)
 layout (optional list which should correspond to the file names in `data/layouts`)
 canonicalUrl (optional, canonical url for the post for SEO)
-```
+
+```markdown
 
 Here's an example of a post's frontmatter:
 
 ```
+
 ---
 title: 'Introducing Tailwind Nexjs Starter Blog'
 date: '2021-01-12'
@@ -113,6 +115,7 @@ authors: ['default', 'sparrowhawk']
 layout: PostLayout
 canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog
 ---
+
 ```
 
 ### Compose
@@ -128,4 +131,5 @@ Using the template? Support this effort by giving a star on GitHub, sharing your
 ## Licence
 
 [MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timrlx.com)
+
 # Sinfulhymn-Portfolio

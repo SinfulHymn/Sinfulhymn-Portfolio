@@ -5,39 +5,39 @@ occupation:  Black hat and Middle School Cyber Coach.
 company: Enrichment coach & Black Hat Freelancer
 email: contact@sinfulhymn.me
 twitter: https://twitter.com/Sinfulhymn
-linkedin: https://www.linkedin.com/in/Sinfulhymn/
+linkedin: https://www.linkedin.com/in/kmachappy/
 github: https://github.com/Sinfulhymn
 ---
 
-Hello, I am SinfulHymn.
+# Hello, I am SinfulHymn
 
 I am, who I am.
-Black hat and Middle School Coach.
+Grey hat and Middle School Coach.
 
-Cyber security expert, Software engineer, Social engineer, Automotive Electrian. Amateur Glass blower.
+Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cultivator, Hydroponics grow, Amateur Glass blower.
 
 Stoner and psychonaut.
 
 Traveler, I Love to get lost in different countries.
 
-Athlete. Marathon runner, hiker and climber
+Athlete. Marathon runner, triathelete, hiker and climber.
 
 There’s a lot to me, get to know me.
-I’ve lived a very crazy life for such a young age.
+I’ve lived a rollercoaster of a life for such a young age.
 
-I hate superficial people and people so consumed by mainstream media. If you’re a Disney child or anything of that nature please ignore me
+I dislike superficial people and people consumed by mainstream media. If you’re a Disney child or anything of that nature please ignore me.
 
-I live a different reality to most people. I don’t live the norm
-
----
-
-Currently learning: Threejs | Blender | Shader programming | Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
-
-Currently Working on: Client website for Big Guy Auto and San Fernando Pet Hospital, Twisted Dreams Haunt
+I live a different reality to most people. I don’t live the norm.
 
 ---
 
-OS: Fedora | MacOS
+Currently learning: Fusion360 | Threejs | Blender | Shader programming | Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
+
+Currently Working on: portfolio, new web developement projects.
+
+---
+
+OS: Fedora | MacOS | Windows 10
 
 Languages: JavaScript | TypeScript | Python | Java | HTML | CSS
 
@@ -48,6 +48,8 @@ Back End Framewroks: Shopify | Strapi | Payload | Express | Stripe | Django | Me
 Databases: PostgreSQL | MySQL | MongoDB
 
 Design: Creative Cloud | Blender
+
+Command Line Tools: Terminal (macOS) | Zsh (Fedora) | PowerShell (Windows 10)
 
 ---
 

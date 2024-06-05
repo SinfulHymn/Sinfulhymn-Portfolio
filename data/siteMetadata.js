@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'SinfulHymn Portfolio',
+  title: 'Portfolio',
   author: 'Alejandro Rojas',
   firstName: 'Alejandro',
   lastName: 'Rojas',
@@ -17,7 +17,7 @@ const siteMetadata = {
   twitter: 'https://twitter.com/Sinfulhymn',
   facebook: 'https://facebook.com/sinfylhymn',
   youtube: 'https://youtube.com/sinfulhymn',
-  linkedin: 'https://www.linkedin.com/in/sinfulhymn/',
+  linkedin: 'https://www.linkedin.com/in/kmachappy/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
