@@ -14,9 +14,9 @@ github: https://github.com/Sinfulhymn
 I am, who I am.
 Grey hat and Middle School STEM Enrichment Coach.
 
-Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cultivator, Hydroponics grow, Amateur Glass blower.
+Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cannabis Cultivator, Hydroponics grower, Amateur Glass blower.
 
-Stoner and psychonaut.
+Stoner and Psychonaut.
 
 Traveler, I Love to get lost in different countries.
 
