@@ -1,8 +1,8 @@
 ---
 name: Alejandro Rojas
 avatar: /static/images/main_photo.jpg
-occupation:  Grey hat and Middle School STEM Enrichment Coach.
-company: Enrichment coach & Grey Hat Freelancer
+occupation:  Grey hat and Enrichment Coach
+company:
 email: contact@sinfulhymn.me
 twitter: https://twitter.com/Sinfulhymn
 linkedin: https://www.linkedin.com/in/kmachappy/
