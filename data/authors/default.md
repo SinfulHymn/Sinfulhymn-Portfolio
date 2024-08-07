@@ -12,22 +12,16 @@ github: https://github.com/Sinfulhymn
 # Hello, I am SinfulHymn
 
 I am, who I am.
-Grey hat and Middle School STEM Enrichment Coach.
+Grey hat and Enrichment Coach
 
-Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cannabis Cultivator, Hydroponics grower, Amateur Glass blower.
-
-Stoner and Psychonaut.
+Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cultivator, Hydroponics, Amateur Glass blower.
 
 Traveler, I Love to get lost in different countries.
 
-Athlete. Marathon runner, triathelete, hiker and climber.
+Athlete. Marathon runner, triathelete, hiker.
 
 There’s a lot to me, get to know me.
 I’ve lived a rollercoaster of a life for such a young age.
-
-I dislike superficial people and people consumed by mainstream media. If you’re a Disney child or anything of that nature please ignore me.
-
-I live a different reality to most people. I don’t live the norm.
 
 ---
 
