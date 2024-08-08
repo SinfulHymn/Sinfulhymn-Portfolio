@@ -33,8 +33,8 @@ module.exports = {
       colors: {
         'background-light': '',
         primary: 'red',
-        'primary-500': '#3edc0d',
-        'primary-600': '#22d7bf',
+        'primary-500': '#3b2875',
+        'primary-600': '#d722b3',
         // 'primary-600': '#d722b3',
         violet: {
           ...colors.violet,
