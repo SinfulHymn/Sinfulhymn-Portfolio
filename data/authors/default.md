@@ -1,7 +1,7 @@
 ---
 name: Alejandro Rojas
 avatar: /static/images/main_photo.jpg
-occupation:  Grey hat and Enrichment Coach
+occupation: Enrichment Coach
 company:
 email: contact@sinfulhymn.me
 twitter: https://twitter.com/Sinfulhymn
@@ -11,17 +11,12 @@ github: https://github.com/Sinfulhymn
 
 # Hello, I am SinfulHymn
 
-I am, who I am.
-Grey hat and Enrichment Coach
 
-Cyber security enthusiast, Software engineer, Social engineer, Automotive Electrian, Cultivator, Hydroponics, Amateur Glass blower.
+Enrichment Coach
 
-Traveler, I Love to get lost in different countries.
+Web Dev, Cyber sec, Automotive tech, Cultivator, Hydroponics.
 
-Athlete. Marathon runner, triathelete, hiker.
-
-There’s a lot to me, get to know me.
-I’ve lived a rollercoaster of a life for such a young age.
+Adventurer. Traverler. in haitus Marathon runner, hiker.
 
 ---
 
