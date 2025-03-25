@@ -18,9 +18,9 @@ const LayoutWrapper = ({ children }) => {
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
-                <div className="flex justify-center  text-2xl font-semibold text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500 sm:hidden"></div>
+                <div className="flex justify-center  text-2xl font-semibold text-primaryAccent hover:text-secondaryAccent dark:text-primary-600 dark:hover:text-primary-500 sm:hidden"></div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center justify-center text-2xl font-semibold text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500 sm:block">
+                  <div className="flex items-center justify-center text-2xl font-semibold text-primaryAccent hover:text-secondaryAccent dark:text-primary-600 dark:hover:text-primary-500 sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -35,7 +35,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 font-medium text-gray-900 hover:text-secondaryAccent dark:text-gray-100 sm:p-4"
                 >
                   {link.title}
                 </Link>

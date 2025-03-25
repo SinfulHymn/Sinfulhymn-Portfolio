@@ -27,18 +27,19 @@ export default function Home({ posts, projects }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="nothing">
         <div className="space-y-2 py-8 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-800 dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
-            Hello, I'm{' '}
-            <span className=" text-primary-500 dark:text-primary-600">
-              {siteMetadata.firstName} {siteMetadata.lastName}
-            </span>
+          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
+            Hello, I'm
+            <span className=" text-primaryAccent dark:text-primary-600"> SinfulHymn</span>
             {/* {siteMetadata.firstName.substring(0, 3)}
             <span className="text-primary-600">{siteMetadata.firstName.substring(3, 6)}</span>
             {siteMetadata.firstName.substring(6)} {siteMetadata.lastName} */}
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
+            <p className="text-primaryText" key={idx}>
+              {paragraph}
+            </p>
+          ))}
+
           <div className="flex w-full flex-wrap">
             <ButtonCard
               title={'Projects'}

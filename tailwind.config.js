@@ -32,7 +32,28 @@ module.exports = {
       },
       colors: {
         'background-light': '',
-        primary: 'red',
+        //primary: 'red',
+        //light pallet
+        background: '#F5F5F5', // dark base
+        primaryText: '#333333',
+        secondaryText: '#757575',
+        primaryAccent: '#462a9b',
+        secondaryAccent: '#d722b3',
+        highlight: '#FFB886C',
+        //dark pallet
+        primary: '#80cbc4', // neon cyan / soft tech blue
+        accent: '#cba6f7', // pastel purple (like your hair)
+        softMint: '#94e2d5', // jacket color / mint teal
+        warmHighlight: '#ffb86c', // soft amber for callouts
+        fgTextLight: '#1e1e1e',
+        primaryLight: '#457b9d',
+        secondaryLight: '#9d4edd',
+        highlightLight: '#ff9f1c',
+        mutedLight: '#e0e0e0',
+        bgDark: '#121212',
+        fgTextDark: '#d6d6d6',
+        primaryDark: '#80cbc4',
+
         'primary-500': '#3b2875',
         'primary-600': '#d722b3',
         // 'primary-600': '#d722b3',
