@@ -17,7 +17,7 @@ const siteMetadata = {
   socialBanner: '',
   email: 'contact@sinfulhymn.me',
   github: 'https://github.com/SinfulHymn',
-  twitter: 'https://x.com/Sinfulhymn',
+  X: 'https://x.com/',
   facebook: 'https://facebook.com/sinfulhymn',
   youtube: 'https://youtube.com/sinfulhymn',
   linkedin: 'https://www.linkedin.com/in/kmachappy/',

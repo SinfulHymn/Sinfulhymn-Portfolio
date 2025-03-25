@@ -10,7 +10,7 @@ export default function Footer() {
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={5} />
           <SocialIcon kind="github" href={siteMetadata.github} size={5} />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={5} />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={5} />
+          <SocialIcon kind="X" href={siteMetadata.X} size={5} />
           <SocialIcon kind="instagram" href={siteMetadata.instagram} size={5} />
         </div>
 

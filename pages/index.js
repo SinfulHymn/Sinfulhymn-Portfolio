@@ -28,10 +28,10 @@ export default function Home({ posts, projects }) {
       <div className="nothing">
         <div className="space-y-2 py-8 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
-            Hello, I'm
-            <span className=" text-primaryAccent dark:text-primary-600"> SinfulHymn</span>
+            I'm
+            <span className=" text-primaryAccent dark:text-secondaryAccent"> SinfulHymn</span>
             {/* {siteMetadata.firstName.substring(0, 3)}
-            <span className="text-primary-600">{siteMetadata.firstName.substring(3, 6)}</span>
+            <span className="text-secondaryAccent">{siteMetadata.firstName.substring(3, 6)}</span>
             {siteMetadata.firstName.substring(6)} {siteMetadata.lastName} */}
           </h1>
           {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
@@ -71,7 +71,7 @@ export default function Home({ posts, projects }) {
               <div className="flex justify-end text-base font-medium leading-8">
                 <Link
                   href="/projects"
-                  className="text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+                  className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
                   aria-label="all posts"
                 >
                   All Projects &rarr;
@@ -96,7 +96,7 @@ export default function Home({ posts, projects }) {
             <div className="flex justify-end text-base font-medium leading-8">
               <Link
                 href="/projects"
-                className="text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+                className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
                 aria-label="all posts"
               >
                 All Projects &rarr;
@@ -144,7 +144,7 @@ export default function Home({ posts, projects }) {
                         <div className="text-base font-medium leading-6">
                           <Link
                             href={`/blog/${slug}`}
-                            className="text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+                            className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
                             aria-label={`Read "${title}"`}
                           >
                             Read more &rarr;
@@ -163,7 +163,7 @@ export default function Home({ posts, projects }) {
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+            className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
             aria-label="all posts"
           >
             All Posts &rarr;

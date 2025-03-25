@@ -53,10 +53,6 @@ module.exports = {
         bgDark: '#121212',
         fgTextDark: '#d6d6d6',
         primaryDark: '#80cbc4',
-
-        'primary-500': '#3b2875',
-        'primary-600': '#d722b3',
-        // 'primary-600': '#d722b3',
         violet: {
           ...colors.violet,
           30: '#f9f4fc',
@@ -137,7 +133,7 @@ module.exports = {
         },
         dark: {
           css: {
-            '--tw-prose-links': theme('colors.primary-600'),
+            '--tw-prose-links': theme('colors.secondaryAccent'),
             color: theme('colors.gray.300'),
             a: {
               color: theme('colors.primary.600'),
@@ -172,10 +168,10 @@ module.exports = {
             details: {
               backgroundColor: theme('colors.gray.800'),
             },
-            hr: { borderColor: theme('colors.primary-600') },
+            hr: { borderColor: theme('colors.secondaryAccent') },
             'ol li::marker': {
               fontWeight: '600',
-              color: theme('colors.primary-600'),
+              color: theme('colors.secondaryAccent'),
             },
             'ul li::marker': {
               backgroundColor: theme('colors.gray.400'),

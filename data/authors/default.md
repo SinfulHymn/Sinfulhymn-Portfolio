@@ -1,26 +1,25 @@
 ---
-name: Alejandro Rojas
+name:
 avatar: /static/images/main_photo.jpg
 occupation: Enrichment Coach
 company:
 email: contact@sinfulhymn.me
-twitter: https://twitter.com/Sinfulhymn
+X: https://X.com/Sinfulhymn
 linkedin: https://www.linkedin.com/in/kmachappy/
 github: https://github.com/Sinfulhymn
 ---
 
-# Hello, I am SinfulHymn
-
+# I am SinfulHymn
 
 Enrichment Coach
 
-Web Dev, Cyber sec, Automotive tech, Cultivator, Hydroponics.
+Web Developer, Cyber security, Automotive technician, Cultivator, Hydroponics.
 
-Adventurer. Traverler. in haitus Marathon runner, hiker.
+Adventurer. Traveler. Marathon runner, Hiker, Cyclist.
 
 ---
 
-Currently learning: Fusion360 | Threejs | Blender | Shader programming | Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
+Currently learning: Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
 
 Currently Working on: portfolio, new web developement projects.
 

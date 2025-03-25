@@ -32,10 +32,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
           </header>
           <div
-            className="divide-y divide-primary-500 pb-8 dark:divide-primary-600 xl:divide-y-0 "
+            className="divide-y divide-primaryAccent pb-8 dark:divide-secondaryAccent xl:divide-y-0 "
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <div className="divide-y divide-primary-500 dark:divide-primary-600 xl:col-span-3 xl:row-span-2 xl:pb-0">
+            <div className="divide-y divide-primaryAccent dark:divide-secondaryAccent xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
             <Comments frontMatter={frontMatter} />
@@ -45,7 +45,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/blog/${prev.slug}`}
-                      className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600"
+                      className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent"
                     >
                       &larr; {prev.title}
                     </Link>
@@ -55,7 +55,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/blog/${next.slug}`}
-                      className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600"
+                      className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent"
                     >
                       {next.title} &rarr;
                     </Link>

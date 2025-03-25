@@ -3,12 +3,12 @@ import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
+  const { name, avatar, occupation, company, email, X, linkedin, github } = frontMatter
 
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="divide-y divide-primary-500 dark:divide-primary-600">
+      <div className="divide-y divide-primaryAccent dark:divide-secondaryAccent">
         {/* <div className="space-y-2 pt-2 pb-2 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-10">
             About
@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               alt="avatar"
               width="192"
               height="192"
-              className="h-48 w-48 rounded-full object-cover"
+              className="h-48 w-48 rounded-full object-cover object-[50%_10%]"
             />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
@@ -30,7 +30,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="twitter" href={twitter} />
+              <SocialIcon kind="X" href={X} />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>

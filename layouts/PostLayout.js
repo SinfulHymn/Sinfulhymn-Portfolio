@@ -10,9 +10,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+  `https://mobile.X.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/blog/${slug}`)}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -28,7 +26,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       />
       <ScrollTopAndComment />
       <article>
-        <div className="xl:divide-y xl:divide-primary-500 xl:dark:divide-primary-600">
+        <div className="xl:divide-y xl:divide-primaryAccent xl:dark:divide-secondaryAccent">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
@@ -47,7 +45,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
           </header>
           <div
-            className="divide-y divide-primary-500 pb-8 dark:divide-primary-600 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
+            className="divide-y divide-primaryAccent pb-8 dark:divide-secondaryAccent xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
@@ -68,14 +66,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       <dl className="whitespace-nowrap text-sm font-medium leading-5">
                         <dt className="sr-only">Name</dt>
                         <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Twitter</dt>
+                        <dt className="sr-only">X</dt>
                         <dd>
-                          {author.twitter && (
+                          {author.X && (
                             <Link
-                              href={author.twitter}
-                              className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600"
+                              href={author.X}
+                              className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent"
                             >
-                              {author.twitter.replace('https://twitter.com/', '@')}
+                              {author.X.replace('https://X.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -85,11 +83,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
-            <div className="divide-y divide-primary-500 dark:divide-primary-600 xl:col-span-3 xl:row-span-2 xl:pb-0">
+            <div className="divide-y divide-primaryAccent dark:divide-secondaryAccent xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
+                  {'Discuss on X'}
                 </Link>
                 {` • `}
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
@@ -97,7 +95,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <Comments frontMatter={frontMatter} />
             </div>
             <footer>
-              <div className="divide-primary-500 text-sm font-medium leading-5 dark:divide-primary-600 xl:col-start-1 xl:row-start-2 xl:divide-y">
+              <div className="divide-primaryAccent text-sm font-medium leading-5 dark:divide-secondaryAccent xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -117,7 +115,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           Previous Article
                         </h2>
-                        <div className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600">
+                        <div className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
@@ -127,7 +125,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           Next Article
                         </h2>
-                        <div className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600">
+                        <div className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -138,7 +136,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/blog"
-                  className="dark:hover:text-primary-400·text-primary-500·hover:text-primary-600"
+                  className="dark:hover:text-primary-400·text-primaryAccent·hover:text-secondaryAccent"
                 >
                   &larr; Back to the blog
                 </Link>

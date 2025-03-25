@@ -57,7 +57,7 @@ const ButtonCard = ({
                 <p className="prose mb-1 max-w-none text-gray-500 dark:text-gray-400">
                   {description}
                 </p>
-                <div className="dark:hover:text-primary-400 text-2xl font-thin leading-6 text-primary-500 hover:text-primary-600">
+                <div className="dark:hover:text-primary-400 text-2xl font-thin leading-6 text-primaryAccent hover:text-secondaryAccent">
                   <svg
                     className="rotate-180"
                     width="24"

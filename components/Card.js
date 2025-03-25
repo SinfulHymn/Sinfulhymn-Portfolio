@@ -49,14 +49,14 @@ const Card = ({ title, description, imgSrc, href, repo, tags }) => (
           <div className="flex flex-row justify-between">
             <Link
               href={href}
-              className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+              className="text-base font-medium leading-6 text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
               aria-label={`Link to ${title}`}
             >
               Live Site &rarr;
             </Link>
             <Link
               href={repo}
-              className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:text-primary-600 dark:hover:text-primary-500"
+              className="text-base font-medium leading-6 text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
               aria-label={`Link to ${title}`}
             >
               Code Repo &rarr;
