@@ -32,7 +32,7 @@ export default function Home({ posts, projects }) {
             <span className=" text-secondaryAccent dark:text-secondaryAccent "> SinfulHymn</span>
           </h1>
           {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
-            <p className="text-primaryText" key={idx}>
+            <p className="text-primaryText dark:text-white" key={idx}>
               {paragraph}
             </p>
           ))}
