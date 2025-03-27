@@ -29,10 +29,7 @@ export default function Home({ posts, projects }) {
         <div className="space-y-2 py-8 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
             I'm
-            <span className=" text-primaryAccent dark:text-secondaryAccent"> SinfulHymn</span>
-            {/* {siteMetadata.firstName.substring(0, 3)}
-            <span className="text-secondaryAccent">{siteMetadata.firstName.substring(3, 6)}</span>
-            {siteMetadata.firstName.substring(6)} {siteMetadata.lastName} */}
+            <span className=" text-secondaryAccent dark:text-secondaryAccent "> SinfulHymn</span>
           </h1>
           {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
             <p className="text-primaryText" key={idx}>
@@ -42,21 +39,27 @@ export default function Home({ posts, projects }) {
 
           <div className="flex w-full flex-wrap">
             <ButtonCard
-              title={'Projects'}
-              description={'Check out my projects'}
-              href={'/projects'}
-              className="py-4 md:px-2"
-            />
-            <ButtonCard
               title={'About'}
-              description={'Learn more about me'}
+              description={'About me'}
               href={'/about'}
               className="py-4 md:px-2"
             />
             <ButtonCard
               title={'Blog'}
-              description={'Read my blog posts'}
+              description={'My blog posts'}
               href={'/blog'}
+              className="py-4 md:px-2"
+            />
+            <ButtonCard
+              title={'Projects'}
+              description={'OSld projects'}
+              href={'/projects'}
+              className="py-4 md:px-2"
+            />
+            <ButtonCard
+              title={'Youtube'}
+              description={"Vlog's of my life"}
+              href={'https://www.youtube.com/@Sinful_hymn'}
               className="py-4 md:px-2"
             />
           </div>

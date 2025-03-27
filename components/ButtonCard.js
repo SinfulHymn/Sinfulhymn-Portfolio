@@ -26,7 +26,9 @@ const ButtonCard = ({
 
   return (
     <div
-      className={`${!onlyImg && mdSize && 'w-full md:w-1/3'} ${className} overflow-hidden`}
+      className={`${
+        !onlyImg && mdSize && 'w-full text-secondaryAccent md:w-1/4'
+      } ${className} overflow-hidden`}
       ref={ref}
     >
       <div

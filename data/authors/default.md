@@ -5,25 +5,31 @@ occupation: Enrichment Coach
 company:
 email: contact@sinfulhymn.me
 X: https://X.com/Sinfulhymn
-linkedin: https://www.linkedin.com/in/kmachappy/
+linkedin: https://www.linkedin.com/in/sinfulhymn/
 github: https://github.com/Sinfulhymn
 ---
 
-# I am SinfulHymn
+# I am <span style={{ color: '#753f53' }}>Sinful Hymn</span>
 
-Enrichment Coach
+My path into tech started when I was 12 and got phished on RuneScape. That moment didn’t just frustrate me — it triggered an obsession with understanding how systems work, how people interact with them, and how information can be manipulated. That curiosity led me deep into the world of cybersecurity, programming, and eventually, social engineering. I didn't just learn how to code — I learned how to read people, think like an attacker, and understand how trust is built and broken online.
 
-Web Developer, Cyber security, Automotive technician, Cultivator, Hydroponics.
+Over time, I’ve worn many hats. I spent years as an automotive technician focused on electrical diagnostics and complex repairs. I’ve worked in STEM education, teaching middle school students robotics, coding (JavaScript), and 3D modeling with Fusion 360 — turning abstract concepts into something tangible for young minds. I’ve held internships as a backend web developer, building APIs, writing SQL, and working in agile teams with real production workflows and mentorship.
 
-Adventurer. Traveler. Marathon runner, Hiker, Cyclist.
+I’ve also become good at analyzing systems beyond just code — including how people behave, what motivates them, and how trust functions in both digital and real-world environments. That mindset has helped me not only in technical roles but also in leadership, teaching, and creative work.
+
+At my core, I’m a builder and a systems thinker. I reverse-engineer, I teach, I learn fast, and I don’t shy away from complexity. This site is just a piece of everything I’ve lived, broken down into code, words, and stories.
 
 ---
+
+## <span style={{ color: '#753f53' }}>Currently in Progress</span>
 
 Currently learning: Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
 
-Currently Working on: portfolio, new web developement projects.
+Currently Working on: portfolio, new web development projects.
 
 ---
+
+## <span style={{ color: '#753f53' }}>Environments I use</span>
 
 OS: Fedora | MacOS | Windows 10
 

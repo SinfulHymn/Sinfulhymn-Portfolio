@@ -85,7 +85,7 @@ Frontmatter follows [Hugo's standards](https://gohugo.io/content-management/fron
 
 Currently 10 fields are supported.
 
-```
+````
 title (required)
 date (required)
 tags (required, can be empty array)
@@ -101,9 +101,10 @@ canonicalUrl (optional, canonical url for the post for SEO)
 
 Here's an example of a post's frontmatter:
 
-```
+````
 
 ---
+
 title: 'Introducing Tailwind Nexjs Starter Blog'
 date: '2021-01-12'
 lastmod: '2021-01-18'
@@ -114,6 +115,7 @@ images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.j
 authors: ['default', 'sparrowhawk']
 layout: PostLayout
 canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog
+
 ---
 
 ```
@@ -126,10 +128,11 @@ Follow the interactive prompt to generate a post with pre-filled front matter.
 
 ## Support
 
-Using the template? Support this effort by giving a star on GitHub, sharing your own blog and giving a shoutout on Twitter or becoming a project [sponsor](https://github.com/sponsors/timlrx).
+Using the template? Support this effort by giving a star on GitHub, sharing your own blog and giving a shoutout on X or becoming a project [sponsor](https://github.com/sponsors/timlrx).
 
 ## Licence
 
 [MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timrlx.com)
 
 # Sinfulhymn-Portfolio
+```

@@ -21,6 +21,7 @@ const siteMetadata = {
   facebook: 'https://facebook.com/sinfulhymn',
   youtube: 'https://youtube.com/sinfulhymn',
   linkedin: 'https://www.linkedin.com/in/kmachappy/',
+  instagram: 'https://www.instagram.com/sinfulhymn_',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
