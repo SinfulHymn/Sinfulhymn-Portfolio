@@ -38,7 +38,7 @@ module.exports = {
         primaryText: '#000000',
         secondaryText: '#757575',
         primaryAccent: '#462a9b',
-        secondaryAccent: '#A65D68',
+        secondaryAccent: '#c44155',
         primaryTexts: '#a36982',
         highlight: '#FFB886C',
         //dark pallet
@@ -48,12 +48,13 @@ module.exports = {
         warmHighlight: '#ffb86c', // soft amber for callouts
         fgTextLight: '#1e1e1e',
         primaryLight: '#457b9d',
-        secondaryAccentDark: '#a46880',
+        secondaryAccentDark: '#B97EFF',
         highlightLight: '#ff9f1c',
         mutedLight: '#e0e0e0',
         bgDark: '#121212',
         fgTextDark: '#d6d6d6',
         primaryDark: '#80cbc4',
+        neonblush: '#FF7CA8',
         violet: {
           ...colors.violet,
           30: '#f9f4fc',

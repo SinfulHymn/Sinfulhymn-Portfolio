@@ -29,7 +29,7 @@ export default function Home({ posts, projects }) {
         <div className="space-y-2 py-8 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
             I'm
-            <span className=" text-secondaryAccent dark:text-secondaryAccent "> SinfulHymn</span>
+            <span className=" text-secondaryAccent dark:text-secondaryAccentDark"> SinfulHymn</span>
           </h1>
           {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
             <p className="text-primaryText dark:text-white" key={idx}>
@@ -74,7 +74,7 @@ export default function Home({ posts, projects }) {
               <div className="flex justify-end text-base font-medium leading-8">
                 <Link
                   href="/projects"
-                  className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
+                  className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-primaryAccent"
                   aria-label="all posts"
                 >
                   All Projects &rarr;
@@ -99,7 +99,7 @@ export default function Home({ posts, projects }) {
             <div className="flex justify-end text-base font-medium leading-8">
               <Link
                 href="/projects"
-                className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
+                className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush"
                 aria-label="all posts"
               >
                 All Projects &rarr;

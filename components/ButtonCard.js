@@ -27,14 +27,14 @@ const ButtonCard = ({
   return (
     <div
       className={`${
-        !onlyImg && mdSize && 'w-full text-secondaryAccent md:w-1/4'
+        !onlyImg && mdSize && 'w-full text-secondaryAccent dark:text-secondaryAccentDark md:w-1/4'
       } ${className} overflow-hidden`}
       ref={ref}
     >
       <div
         className={`rounded-md ${
           onlyImg ? 'p-0.5' : 'p-0.5 dark:p-px'
-        } -z-10 h-full bg-gradient-to-r from-indigo-200 via-purple-500 to-pink-500`}
+        } -z-10 h-full bg-gradient-to-r from-secondaryAccentDark via-secondaryAccent to-neonblush`}
       >
         <Link href={href} aria-label={`Link to ${title}`}>
           <animated.div

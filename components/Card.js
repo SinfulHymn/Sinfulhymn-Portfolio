@@ -44,19 +44,19 @@ const Card = ({ title, description, imgSrc, href, repo, tags }) => (
             <Tag key={tag} text={tag} />
           ))}
         </div>
-        <p className="prose mb-auto max-w-none  text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="prose mb-auto max-w-none text-black dark:text-white">{description}</p>
         {href && (
           <div className="flex flex-row justify-between">
             <Link
               href={href}
-              className="text-base font-medium leading-6 text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
+              className="text-base font-medium leading-6 text-secondaryAccent hover:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-primaryAccent"
               aria-label={`Link to ${title}`}
             >
               Live Site &rarr;
             </Link>
             <Link
               href={repo}
-              className="text-base font-medium leading-6 text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent"
+              className="text-base font-medium leading-6 text-secondaryAccent hover:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-primaryAccent"
               aria-label={`Link to ${title}`}
             >
               Code Repo &rarr;

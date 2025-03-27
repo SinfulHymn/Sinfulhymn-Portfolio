@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="flex justify-center  text-2xl font-semibold dark:text-secondaryAccent dark:hover:text-primaryAccent sm:hidden"></div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center justify-center text-2xl font-semibold text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccent dark:hover:text-primaryAccent sm:block">
+                  <div className="flex items-center justify-center text-2xl font-semibold text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -35,7 +35,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-secondaryAccent hover:text-primaryAccent dark:text-gray-100 sm:p-4"
+                  className="p-1 font-medium text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccentDark dark:text-gray-100 dark:hover:text-neonblush sm:p-4"
                 >
                   {link.title}
                 </Link>
