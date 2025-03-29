@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between ">
                 <div className="flex justify-center  text-2xl font-semibold dark:text-secondaryAccent dark:hover:text-primaryAccent sm:hidden"></div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center justify-center text-2xl font-semibold text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush sm:block">
+                  <div className="flex items-center justify-center text-2xl font-semibold text-secondaryAccent hover:text-primaryAccent focus:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush dark:focus:text-secondaryAccentDark sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
