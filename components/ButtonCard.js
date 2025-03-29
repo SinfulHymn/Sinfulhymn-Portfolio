@@ -47,19 +47,17 @@ const ButtonCard = ({
             className={`${
               onlyImg && 'h-32 w-32'
             } hover:after:animate-hue-animation relative z-20 h-full overflow-hidden rounded-md
-          bg-violet-30 will-change-transform after:pointer-events-none after:absolute after:inset-0 after:z-10 after:bg-texture-pattern
+          bg-[#f7f7f7] will-change-transform after:pointer-events-none after:absolute after:inset-0 after:z-10 after:bg-texture-pattern
           after:bg-cover after:bg-no-repeat after:opacity-0 after:mix-blend-hard-light after:transition-opacity
-          after:duration-500 after:will-change-auto hover:after:opacity-100 dark:bg-violet-950`}
+          after:duration-500 after:will-change-auto hover:after:opacity-100 dark:bg-[#11091e]`}
           >
             {imgSrc && <Image alt={title} src={imgSrc} className="object-cover object-center" />}
             {onlyImg && <>{children}</>}
             {!onlyImg && (
               <div className="p-4">
                 <h2 className="mb-1 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
-                <p className="prose mb-1 max-w-none text-gray-500 dark:text-gray-400">
-                  {description}
-                </p>
-                <div className="dark:hover:text-primary-400 text-2xl font-thin leading-6 text-primaryAccent hover:text-secondaryAccent">
+                <p className="prose mb-1 max-w-none text-black dark:text-white">{description}</p>
+                <div className="text-2xl font-thin leading-6 text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush">
                   <svg
                     className="rotate-180"
                     width="24"

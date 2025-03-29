@@ -119,7 +119,7 @@ module.exports = {
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            hr: { borderColor: theme('colors.gray.200') },
+            hr: { borderColor: theme('colors.secondaryAccent') },
             'ol li::marker': {
               fontWeight: '600',
               color: theme('colors.gray.500'),
@@ -136,7 +136,7 @@ module.exports = {
         },
         dark: {
           css: {
-            '--tw-prose-links': theme('colors.secondaryAccent'),
+            '--tw-prose-links': theme('colors.secondaryAccentDark'),
             color: theme('colors.gray.300'),
             a: {
               color: theme('colors.primary.600'),
@@ -171,7 +171,7 @@ module.exports = {
             details: {
               backgroundColor: theme('colors.gray.800'),
             },
-            hr: { borderColor: theme('colors.secondaryAccent') },
+            hr: { borderColor: theme('colors.secondaryAccentDark') },
             'ol li::marker': {
               fontWeight: '600',
               color: theme('colors.secondaryAccent'),

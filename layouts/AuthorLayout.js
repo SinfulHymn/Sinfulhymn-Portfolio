@@ -8,7 +8,7 @@ export default function AuthorLayout({ children, frontMatter }) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="divide-y divide-primaryAccent dark:divide-secondaryAccent">
+      <div className="divide-y divide-secondaryAccent dark:divide-secondaryAccentDark">
         {/* <div className="space-y-2 pt-2 pb-2 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-10">
             About
@@ -23,18 +23,20 @@ export default function AuthorLayout({ children, frontMatter }) {
               height="192"
               className="h-48 w-48 rounded-full object-cover object-[50%_10%]"
             />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-4 tracking-tight">{name}</h3>
-            <div className="text-secondaryAccent dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
+            <h3 className="pt-4 pb-2 text-2xl font-bold leading-4 tracking-tight text-secondaryAccent dark:text-secondaryAccentDark">
+              {name}
+            </h3>
+            <div className="text-black dark:text-white">{occupation}</div>
+            <div className="text-black dark:text-white">{company}</div>
             <div className="flex space-x-5 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="linkedin" href={linkedin} />
               <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="X" href={X} />
-              <SocialIcon kind="Instagram" href={instagram} />
             </div>
           </div>
-          <div className="prose max-w-none pt-6 pb-6 dark:prose-dark xl:col-span-2">{children}</div>
+          <div className="prose max-w-none space-y-6 pt-6 pb-6 text-black dark:prose-dark dark:text-white xl:col-span-2">
+            {children}
+          </div>
         </div>
       </div>
     </>

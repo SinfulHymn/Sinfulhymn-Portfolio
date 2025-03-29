@@ -1,5 +1,6 @@
 const siteMetadata = {
-  title: 'Portfolio',
+  title: 'SinfulHymn',
+  name: 'SinfulHymn',
   author: 'Alejandro Rojas',
   firstName: 'Alejandro',
   lastName: 'Rojas',

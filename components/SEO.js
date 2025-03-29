@@ -22,6 +22,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       )}
       <meta name="X:card" content="summary_large_image" />
       <meta name="X:site" content={siteMetadata.X} />
+      <meta name="X:name" content={siteMetadata.name} />
       <meta name="X:title" content={title} />
       <meta name="X:description" content={description} />
       <meta name="X:image" content={twImage} />

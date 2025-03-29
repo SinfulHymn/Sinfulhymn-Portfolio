@@ -18,7 +18,10 @@ export async function getStaticProps() {
 }
 
 const notFound = () => {
-  return <div className="py-6">No Posts Found</div>
+  return <div className="py-4">Under Construction</div>
+}
+const noProjects = () => {
+  return <div className="py-4">Under Construction</div>
 }
 
 export default function Home({ posts, projects }) {
@@ -27,7 +30,7 @@ export default function Home({ posts, projects }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="nothing">
         <div className="space-y-2 py-8 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
+          <h1 className="font-bold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
             I'm
             <span className=" text-secondaryAccent dark:text-secondaryAccentDark"> SinfulHymn</span>
           </h1>
@@ -82,6 +85,7 @@ export default function Home({ posts, projects }) {
               </div>
             )}
           </div>
+          {!projectsData.length && noProjects()}
           <div className="grid grid-cols-1 gap-4 py-4 md:grid-cols-2 xl:grid-cols-2">
             {projectsData.slice(0, 4).map((d) => (
               <Card

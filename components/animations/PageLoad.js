@@ -7,8 +7,8 @@ const variants = {
     scale: 1,
     y: 0,
     transition: {
-      duration: 0.45,
-      delay: 0.005,
+      duration: 0.2,
+      delay: 0,
     },
   },
   out: {
@@ -16,7 +16,7 @@ const variants = {
     scale: 1,
     y: 40,
     transition: {
-      duration: 0.45,
+      duration: 0.2,
     },
   },
 }
