@@ -29,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Be Vietnam Pro', ...defaultTheme.fontFamily.sans],
+        t26: ['t26-carbon', 'monospace'],
       },
       colors: {
         'background-light': '',

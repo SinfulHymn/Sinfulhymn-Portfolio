@@ -34,8 +34,8 @@ export default function GradientOverlay() {
         <Image
           src={'/static/images/left-dark-gradient.png'}
           alt="Picture of the author"
-          width={10}
-          height={80}
+          width={1000}
+          height={800}
           priority
         ></Image>
       </div>

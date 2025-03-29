@@ -52,7 +52,7 @@ export default function Home({ posts, projects }) {
             />
             <ButtonCard
               title={'Projects'}
-              description={'OSld projects'}
+              description={'Old projects'}
               href={'/projects'}
               className="py-4 md:px-2"
             />
@@ -74,7 +74,7 @@ export default function Home({ posts, projects }) {
               <div className="flex justify-end text-base font-medium leading-8">
                 <Link
                   href="/projects"
-                  className="text-primaryAccent hover:text-secondaryAccent dark:text-secondaryAccentDark dark:hover:text-primaryAccent"
+                  className="text-secondaryAccent hover:text-secondaryAccentDark dark:text-secondaryAccentDark dark:hover:text-primaryAccent"
                   aria-label="all posts"
                 >
                   All Projects &rarr;

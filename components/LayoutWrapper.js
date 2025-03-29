@@ -12,12 +12,12 @@ import Image from 'next/image'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <GradientOverlay />
+      {/* <GradientOverlay /> */}{' '}
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-8 sm:py-8">
+        <header className="flex items-center justify-between py-8  sm:py-8">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between ">
                 <div className="flex justify-center  text-2xl font-semibold dark:text-secondaryAccent dark:hover:text-primaryAccent sm:hidden"></div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="flex items-center justify-center text-2xl font-semibold text-secondaryAccent hover:text-primaryAccent dark:text-secondaryAccentDark dark:hover:text-neonblush sm:block">

@@ -4,12 +4,12 @@ avatar: /static/images/main_photo.jpg
 occupation: Enrichment Coach
 company:
 email: contact@sinfulhymn.me
-X: https://X.com/Sinfulhymn
+X:
 linkedin: https://www.linkedin.com/in/sinfulhymn/
 github: https://github.com/Sinfulhymn
 ---
 
-# I am <span style={{ color: '#753f53' }}>Sinful Hymn</span>
+# I am <span style={{ color: '#c44155' }}>Sinful Hymn</span>
 
 My path into tech started when I was 12 and got phished on RuneScape. That moment didn’t just frustrate me — it triggered an obsession with understanding how systems work, how people interact with them, and how information can be manipulated. That curiosity led me deep into the world of cybersecurity, programming, and eventually, social engineering. I didn't just learn how to code — I learned how to read people, think like an attacker, and understand how trust is built and broken online.
 
@@ -21,7 +21,7 @@ At my core, I’m a builder and a systems thinker. I reverse-engineer, I teach, 
 
 ---
 
-## <span style={{ color: '#753f53' }}>Currently in Progress</span>
+## <span style={{ color: '#c44155' }}>Currently in Progress</span>
 
 Currently learning: Reverse Engineering | Nextjs | Strapi | Shopify | Payload |
 
@@ -29,7 +29,7 @@ Currently Working on: portfolio, new web development projects.
 
 ---
 
-## <span style={{ color: '#753f53' }}>Environments I use</span>
+## <span style={{ color: '#c44155' }}>Environments I use</span>
 
 OS: Fedora | MacOS | Windows 10
 

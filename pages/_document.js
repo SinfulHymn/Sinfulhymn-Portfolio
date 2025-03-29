@@ -23,6 +23,7 @@ class MyDocument extends Document {
           <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
           <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+          <link rel="stylesheet" href="https://use.typekit.net/qrl3hlf.css"></link>
         </Head>
         <body
           className="
