@@ -15,9 +15,61 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {
   debug: false,
 })
 
-// Keep track of recent notifications to prevent duplicates
-const recentNotifications = new Set()
+// Keep track of recent notifications and visit counts
+const visitorStats = new Map()
 const NOTIFICATION_TIMEOUT = 5000 // 5 seconds
+
+// Function to parse user agent for detailed device info
+function parseUserAgent(userAgent) {
+  const ua = userAgent.toLowerCase()
+  const browser = ua.includes('firefox')
+    ? 'Firefox'
+    : ua.includes('chrome')
+    ? 'Chrome'
+    : ua.includes('safari')
+    ? 'Safari'
+    : ua.includes('edge')
+    ? 'Edge'
+    : ua.includes('opera')
+    ? 'Opera'
+    : 'Unknown'
+
+  const os = ua.includes('windows')
+    ? 'Windows'
+    : ua.includes('mac')
+    ? 'macOS'
+    : ua.includes('linux')
+    ? 'Linux'
+    : ua.includes('android')
+    ? 'Android'
+    : ua.includes('ios')
+    ? 'iOS'
+    : 'Unknown'
+
+  const isMobile = /mobile|android|iphone|ipad|ipod/i.test(ua)
+
+  return { browser, os, isMobile }
+}
+
+// Function to check if IP is a VPN/Proxy
+async function checkVPN(ip) {
+  try {
+    const response = await axios.get(
+      `${IP_API_URL}/${ip}?fields=status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,proxy,hosting`
+    )
+    const data = response.data
+
+    return {
+      isVPN: data.proxy || data.hosting,
+      isp: data.isp,
+      organization: data.org,
+      as: data.as,
+    }
+  } catch (error) {
+    console.error('Error checking VPN status:', error)
+    return { isVPN: false, isp: 'Unknown', organization: 'Unknown', as: 'Unknown' }
+  }
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -28,28 +80,51 @@ export default async function handler(req, res) {
     // Get visitor's IP address
     const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress
 
-    // Create a unique key for this notification
-    const notificationKey = `${ip}-${Date.now()}`
-
-    // Check if we've sent a notification for this IP recently
-    if (recentNotifications.has(ip)) {
-      return res.status(200).json({ success: true, message: 'Duplicate notification prevented' })
-    }
-
     // Get device information
     const userAgent = req.headers['user-agent']
+    const deviceInfo = parseUserAgent(userAgent)
+
+    // Get referrer
+    const referrer = req.headers.referer || 'Direct'
+
+    // Get language
+    const language = req.headers['accept-language']?.split(',')[0] || 'Unknown'
+
+    // Update visitor stats
+    const currentStats = visitorStats.get(ip) || { count: 0, firstSeen: Date.now() }
+    currentStats.count++
+    currentStats.lastSeen = Date.now()
+    visitorStats.set(ip, currentStats)
 
     // Get geolocation data
     const geoResponse = await axios.get(`${IP_API_URL}/${ip}`)
     const geoData = geoResponse.data
+
+    // Check VPN status
+    const vpnInfo = await checkVPN(ip)
+
+    // Calculate time since first visit
+    const timeSinceFirstVisit = Math.floor((Date.now() - currentStats.firstSeen) / 1000) // in seconds
 
     // Prepare message for Telegram
     const message = `
 🌐 New Website Visitor!
 📍 Location: ${geoData.city || 'Unknown'}, ${geoData.country || 'Unknown'}
 🌍 IP: ${ip}
-💻 Device: ${userAgent}
-⏰ Time: ${new Date().toLocaleString()}
+📊 Visit Count: ${currentStats.count}
+⏱️ First Visit: ${new Date(currentStats.firstSeen).toLocaleString()}
+⏰ Current Time: ${new Date().toLocaleString()}
+💻 Device Info:
+  • Browser: ${deviceInfo.browser}
+  • OS: ${deviceInfo.os}
+  • Device: ${deviceInfo.isMobile ? 'Mobile' : 'Desktop'}
+🌐 Referrer: ${referrer}
+🗣️ Language: ${language}
+🔒 Connection Info:
+  • VPN/Proxy: ${vpnInfo.isVPN ? 'Yes' : 'No'}
+  • ISP: ${vpnInfo.isp}
+  • Organization: ${vpnInfo.organization}
+  • AS: ${vpnInfo.as}
     `
 
     // Send notification to Telegram using the bot instance
@@ -58,11 +133,10 @@ export default async function handler(req, res) {
       disable_web_page_preview: true,
     })
 
-    // Add to recent notifications and set timeout to remove it
-    recentNotifications.add(ip)
+    // Set timeout to clean up old visitor stats (after 24 hours)
     setTimeout(() => {
-      recentNotifications.delete(ip)
-    }, NOTIFICATION_TIMEOUT)
+      visitorStats.delete(ip)
+    }, 24 * 60 * 60 * 1000)
 
     res.status(200).json({ success: true })
   } catch (error) {
