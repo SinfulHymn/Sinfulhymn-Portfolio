@@ -71,6 +71,19 @@ async function checkVPN(ip) {
   }
 }
 
+// Function to generate appropriate header based on visit count
+function generateHeader(visitCount) {
+  if (visitCount === 1) {
+    return '🌐 New Website Visitor!'
+  } else if (visitCount <= 3) {
+    return '👋 Returning Visitor'
+  } else if (visitCount <= 10) {
+    return '🔄 Frequent Visitor'
+  } else {
+    return '⭐ Loyal Visitor'
+  }
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' })
@@ -108,7 +121,7 @@ export default async function handler(req, res) {
 
     // Prepare message for Telegram
     const message = `
-🌐 New Website Visitor!
+${generateHeader(currentStats.count)}
 📍 Location: ${geoData.city || 'Unknown'}, ${geoData.country || 'Unknown'}
 🌍 IP: ${ip}
 📊 Visit Count: ${currentStats.count}
