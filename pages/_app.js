@@ -9,10 +9,12 @@ import Head from 'next/head'
 
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
+import VisitorTracker from '@/components/VisitorTracker'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 import Transition from '@/components/animations/Transition'
 import PageLoad from '@/components/animations/PageLoad'
+import MainLayout from '@/layouts/MainLayout'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
@@ -24,11 +26,14 @@ export default function App({ Component, pageProps }) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
-      <Analytics />
+      {/* <Analytics /> */}
+      <VisitorTracker />
       <LayoutWrapper>
         <Transition>
           <PageLoad>
-            <Component {...pageProps} />
+            <MainLayout>
+              <Component {...pageProps} />
+            </MainLayout>
           </PageLoad>
         </Transition>
       </LayoutWrapper>
