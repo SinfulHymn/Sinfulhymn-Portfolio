@@ -3,7 +3,7 @@ const headerNavLinks = [
   { href: '/blog', title: 'Blog' },
   { href: '/projects', title: 'Projects' },
   {
-    href: 'https://drive.google.com/file/d/1jDj7OQehbG-nHrLA1nL0ZV00u5E_0IGD/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1ASc6hJQFXLC8-SwtAxnctLIT1AhP2v8V/view?usp=sharing',
     title: 'Resume',
   },
   { href: 'https://www.youtube.com/@Sinful_hymn', title: 'Youtube' },

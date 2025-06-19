@@ -2,7 +2,6 @@
   "name": "kmachappy_portfolio",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
