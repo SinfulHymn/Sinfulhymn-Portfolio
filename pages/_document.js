@@ -29,15 +29,13 @@ class MyDocument extends Document {
           className="
           back-light
           back-dark
-          dark:bg-dark 
-          bg-[#f7f7f7] 
+          dark:bg-dark  
           text-black  
           antialiased
           dark:bg-[#11091e]
           dark:text-white
         "
         >
-          <Main />
           <NextScript />
         </body>
       </Html>

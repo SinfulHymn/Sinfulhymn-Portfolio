@@ -6,7 +6,7 @@ const siteMetadata = {
   lastName: 'Rojas',
   headerTitle: 'SinfulHymn',
   description:
-    'Shaped by code, conflict, and curiosity, I’ve navigated the edges of technology and human experience.\nFrom late-night forums to personal reinvention, I’ve built, unraveled, and rebuilt myself — again and again.\nThis isn’t a polished origin story — it’s a reflection of resilience, growth, and the drive to keep evolving.',
+    'Shaped by code, conflict and curiosity, I’ve navigated the edges of technology and human experience. From late night forums to personal reinvention, I’ve built, unraveled and rebuilt myself again and again. This isn’t a polished origin story. It’s a reflection of resilience, growth and the drive to keep evolving.',
   shortDescription:
     'Resilient tech innovator driven by curiosity, building and evolving through code and life.',
   language: 'en-us',

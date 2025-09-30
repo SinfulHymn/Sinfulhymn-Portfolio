@@ -28,8 +28,8 @@ export default function Home({ posts, projects }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="nothing">
-        <div className="space-y-2 py-8 md:space-y-5">
+      <div className="">
+        <div className="space-y-2 py-8 md:space-y-7">
           <h1 className="font-bold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
             I'm
             <span className=" text-secondaryAccent dark:text-secondaryAccentDark"> SinfulHymn</span>
