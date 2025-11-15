@@ -12,7 +12,7 @@ import Image from 'next/image'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      {/* <GradientOverlay /> */}{' '}
+      <GradientOverlay />
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-8  sm:py-8">
           <div>

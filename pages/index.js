@@ -18,10 +18,10 @@ export async function getStaticProps() {
 }
 
 const notFound = () => {
-  return <div className="py-4">Under Construction</div>
+  return <div className="py-4">No Current projects</div>
 }
 const noProjects = () => {
-  return <div className="py-4">Under Construction</div>
+  return <div className="py-4">No Current post</div>
 }
 
 export default function Home({ posts, projects }) {
@@ -30,10 +30,10 @@ export default function Home({ posts, projects }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="">
         <div className="space-y-2 py-8 md:space-y-7">
-          <h1 className="font-bold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
+          {/* <h1 className="font-bold leading-9 tracking-tight text-primaryText dark:text-white sm:text-2xl sm:leading-10 md:text-4xl md:leading-5">
             I'm
             <span className=" text-secondaryAccent dark:text-secondaryAccentDark"> SinfulHymn</span>
-          </h1>
+          </h1> */}
           {siteMetadata.description.split('\n\n').map((paragraph, idx) => (
             <p className="text-primaryText dark:text-white" key={idx}>
               {paragraph}
@@ -43,32 +43,24 @@ export default function Home({ posts, projects }) {
           <div className="flex w-full flex-wrap">
             <ButtonCard
               title={'About'}
-              description={'About me'}
+              description={'About Me'}
               href={'/about'}
               className="py-4 md:px-2"
             />
             <ButtonCard
               title={'Blog'}
-              description={'My blog posts'}
+              description={'Blog Posts'}
               href={'/blog'}
               className="py-4 md:px-2"
             />
             <ButtonCard
               title={'Projects'}
-              description={'Old projects'}
+              description={'Web Projects'}
               href={'/projects'}
-              className="py-4 md:px-2"
-            />
-            <ButtonCard
-              title={'Youtube'}
-              description={"Vlog's of my life"}
-              href={'https://www.youtube.com/@Sinful_hymn'}
               className="py-4 md:px-2"
             />
           </div>
         </div>
-
-        <div></div>
 
         <div className="py-2">
           <div className="flex items-center justify-between py-2 text-2xl font-semibold">
